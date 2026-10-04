@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+
+# Build output
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider / JetBrains, ha valaha megnyitod
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db

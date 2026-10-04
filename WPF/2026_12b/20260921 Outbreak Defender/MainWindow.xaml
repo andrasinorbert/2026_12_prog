@@ -1,0 +1,168 @@
+﻿<Window x:Class="_20260921_Outbreak_Defender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20260921_Outbreak_Defender"
+        mc:Ignorable="d"
+        Title="Outbreak Defender"
+        Width="1500"
+        Height="900"
+        MinWidth="1100"
+        MinHeight="700"
+        WindowStartupLocation="CenterScreen"
+        Background="#EEF2F6">
+    <!-- ========================================================= -->
+    <!--                     FŐ ELRENDEZÉS                          -->
+    <!-- ========================================================= -->
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <!-- fejléc -->
+            <RowDefinition Height="105"/>
+
+            <!-- státuszkártyák -->
+            <RowDefinition Height="90"/>
+
+            <!-- városok + műveletek -->
+            <RowDefinition Height="*"/>
+
+            <!-- napló + térkép + infó -->
+            <RowDefinition Height="260"/>
+
+            <!-- lábléc -->
+            <RowDefinition Height="35"/>
+
+        </Grid.RowDefinitions>
+
+        <!-- ===================================================== -->
+        <!--                         FEJLÉC                         -->
+        <!-- ===================================================== -->
+
+        <Border Grid.Row="0"
+                Background="#102236">
+        </Border>
+
+
+        <!-- ===================================================== -->
+        <!--                    STÁTUSZKÁRTYÁK                      -->
+        <!-- ===================================================== -->
+
+        <Grid Grid.Row="1"
+              Margin="20,10">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.4*"/>
+                <ColumnDefinition Width="1.4*"/>
+                <ColumnDefinition Width="1.2*"/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <!-- KÖR -->
+
+            <Border Grid.Column="0"
+                    Margin="0,0,10,0"
+                    Background="White"
+                    BorderBrush="#CCD5E0"
+                    BorderThickness="1"
+                    CornerRadius="6">
+
+                <StackPanel VerticalAlignment="Center">
+
+                    <TextBlock Text="Kör"
+                               HorizontalAlignment="Center"
+                               FontSize="15"/>
+
+                    <TextBlock x:Name="txtKor"
+                               Text="3"
+                               HorizontalAlignment="Center"
+                               FontSize="28"
+                               FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+            <!-- AKCIÓPONT -->
+
+            <Border Grid.Column="1"
+                    Margin="0,0,10,0"
+                    Background="White"
+                    BorderBrush="#CCD5E0"
+                    BorderThickness="1"
+                    CornerRadius="6">
+
+                <StackPanel VerticalAlignment="Center">
+
+                    <TextBlock Text="Akciópont"
+                               HorizontalAlignment="Center"
+                               FontSize="15"/>
+
+                    <TextBlock x:Name="txtAkciopont"
+                               Text="10"
+                               HorizontalAlignment="Center"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="#16853A"/>
+                </StackPanel>
+            </Border>
+
+            <!-- LAKOSSÁG -->
+
+            <Border Grid.Column="2"
+                    Margin="0,0,10,0"
+                    Background="White"
+                    BorderBrush="#CCD5E0"
+                    BorderThickness="1"
+                    CornerRadius="6">
+
+                <StackPanel VerticalAlignment="Center">
+
+                    <TextBlock Text="Érintett lakosság"
+                               HorizontalAlignment="Center"
+                               FontSize="15"/>
+
+                    <TextBlock x:Name="txtLakossag"
+                               Text="4 250 000"
+                               HorizontalAlignment="Center"
+                               FontSize="24"
+                               FontWeight="Bold"/>
+                </StackPanel>
+            </Border>
+
+
+            <!-- FERTŐZÖTTEK -->
+
+            <Border Grid.Column="3"
+                    Margin="0,0,10,0"
+                    Background="White"
+                    BorderBrush="#CCD5E0"
+                    BorderThickness="1"
+                    CornerRadius="6">
+
+                <StackPanel VerticalAlignment="Center">
+
+                    <TextBlock Text="Fertőzöttek"
+                               HorizontalAlignment="Center"
+                               FontSize="15"/>
+
+                    <TextBlock x:Name="txtFertozottek"
+                               Text="912 000 (21,5%)"
+                               HorizontalAlignment="Center"
+                               FontSize="23"
+                               FontWeight="Bold"
+                               Foreground="#D92727"/>
+                </StackPanel>
+            </Border>
+
+            <Button Grid.Column="4"
+                    x:Name="btnUjJatek"
+                    Content="⟳  Új játék"
+                    VerticalAlignment="Center"
+                    />
+
+        </Grid>
+    </Grid>
+</Window>
