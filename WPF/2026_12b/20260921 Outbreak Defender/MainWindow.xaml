@@ -164,5 +164,144 @@
                     />
 
         </Grid>
+
+
+
+        <!-- ===================================================== -->
+        <!--                    KÖZÉPSŐ RÉSZ                      -->
+        <!-- ===================================================== -->
+
+        <Grid Grid.Row="2"
+		       Margin="20,10">
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1.05*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <!-- ================================================= -->
+            <!--                    VÁROSOK                        -->
+            <!-- ================================================= -->
+            <Border Grid.Column="0"
+				    Margin="0,0,10,0"
+				    Background="White">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Városok"
+						       FontSize="20"
+						       FontWeight="Bold"
+						       Margin="0,0,0,10"/>
+
+                    <DataGrid Grid.Row="1"
+						      x:Name="dgVarosok"
+						      AutoGenerateColumns="False"
+						      CanUserAddRows="False"
+						      CanUserDeleteRows="False"
+						      IsReadOnly="True"
+						      SelectionMode="Single"
+						      SelectionUnit="FullRow"
+						      HeadersVisibility="Column"
+						      GridLinesVisibility="All"
+						      RowHeight="48">
+
+                        <DataGrid.Columns>
+
+                            <!-- VÁROSNÉV -->
+
+                            <DataGridTextColumn Header="Város"
+											    Binding="{Binding Nev}"
+											    Width="1.4*"/>
+
+
+                            <!-- LAKOSSÁG -->
+
+                            <DataGridTextColumn Header="Lakosság"
+											    Binding="{Binding Lakossag, StringFormat=N0}"
+											    Width="1*"/>
+
+
+                            <!-- FERTŐZÖTTSÉG -->
+
+                            <DataGridTemplateColumn Header="Fertőzöttség"
+												    Width="1.7*">
+
+                                <DataGridTemplateColumn.CellTemplate>
+
+                                    <DataTemplate>
+
+                                        <Grid Margin="5">
+
+                                            <ProgressBar Minimum="0"
+													     Maximum="100"
+													     Value="{Binding Fertozottseg}"
+													     Height="22"
+													     Background="#E1E6EC"
+													     Foreground="#F39C12"/>
+
+                                            <TextBlock Text="{Binding Fertozottseg, StringFormat={}{0}%}"
+												       HorizontalAlignment="Center"
+												       VerticalAlignment="Center"
+												       FontWeight="Bold"/>
+
+                                        </Grid>
+
+                                    </DataTemplate>
+
+                                </DataGridTemplateColumn.CellTemplate>
+
+                            </DataGridTemplateColumn>
+
+
+                            <!-- VÉDELEM -->
+
+                            <DataGridTextColumn Header="Védelem"
+											    Binding="{Binding Vedelem}"
+											    Width="0.7*"/>
+
+
+                            <!-- KARANTÉN -->
+
+                            <DataGridCheckBoxColumn Header="Karantén"
+												    Binding="{Binding Karanten}"
+												    Width="0.8*"/>
+
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+
+                </Grid>
+            </Border>
+
+
+            <!-- ================================================= -->
+            <!--                    AKCIÓK                         -->
+            <!-- ================================================= -->
+
+            <Border Grid.Column="1"
+				    Background="White"
+				    Padding="12">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+
+                    </Grid.RowDefinitions>
+
+
+                </Grid>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
