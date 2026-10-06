@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2026_12b", "2026_12b\2026_1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20260921 Outbreak Defender", "20260921 Outbreak Defender\20260921 Outbreak Defender.csproj", "{BAAF781C-9A6C-4572-AD6F-769587A4E737}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20261006", "20261006\20261006.csproj", "{1996A754-A026-4F7D-8BED-0C978937078D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BAAF781C-9A6C-4572-AD6F-769587A4E737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAAF781C-9A6C-4572-AD6F-769587A4E737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAAF781C-9A6C-4572-AD6F-769587A4E737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1996A754-A026-4F7D-8BED-0C978937078D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1996A754-A026-4F7D-8BED-0C978937078D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1996A754-A026-4F7D-8BED-0C978937078D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1996A754-A026-4F7D-8BED-0C978937078D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
