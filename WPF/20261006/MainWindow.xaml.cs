@@ -20,5 +20,17 @@ namespace _20261006
         {
             InitializeComponent();
         }
+
+        void feladat_1(object sender, RoutedEventArgs e)
+        {
+            Window ablak = new feladat_1();
+            ablak.Show();
+        }
+
+        void feladat_2(object sender, RoutedEventArgs e)
+        {
+            Window ablak = new feladat_2();
+            ablak.Show();
+        }
     }
 }

@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:_20261006"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
 
-    </Grid>
+        <Button Content="Feladat 1"
+                Width="100"
+                Height="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="feladat_1"/>
+
+        <Button Content="Feladat 2"
+                Width="100"
+                Height="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="feladat_2"/>
+    </StackPanel>
 </Window>
