@@ -8,7 +8,16 @@
         Title="feladat_2" Height="450" Width="800">
     <Grid>
         <Button Content="Indítás"
-                >
+                Width="180"
+                Height="55"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                Background="Purple"
+                Foreground="White"
+                Margin="10"
+                ToolTip="Program indítása"
+                FontSize="20"
+                FontWeight="Bold">
         </Button>
     </Grid>
 </Window>

@@ -32,5 +32,11 @@ namespace _20261006
             Window ablak = new feladat_2();
             ablak.Show();
         }
+
+        void feladat_3(object sender, RoutedEventArgs e)
+        {
+            Window ablak = new feladat_3();
+            ablak.Show();
+        }
     }
 }
