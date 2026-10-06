@@ -27,5 +27,11 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Click="feladat_3"/>
+        <Button Content="Feladat 4"
+                Width="100"
+                Height="30"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="feladat_4"/>
     </StackPanel>
 </Window>

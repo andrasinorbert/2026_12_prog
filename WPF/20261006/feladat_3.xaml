@@ -10,10 +10,19 @@
         Width="350"
         VerticalAlignment="Center"
         HorizontalAlignment="Center">
+        <TextBlock  Text="Bejelentkezés"
+                    FontSize="28"
+                    FontWeight="Bold"
+                    Margin="10"
+                    HorizontalAlignment="Center"/>
         <TextBlock Text="Felhasználónév" Margin="10"/>
-        <TextBox Name="usernameTextBox" Margin="10"/>
+        <TextBox    Name="usernameTextBox"
+                    Margin="10"
+                    MinHeight="35"/>
         <TextBlock Text="Jelszó" Margin="10"/>
-        <PasswordBox Name="passwordBox" Margin="10"/>
-        <Button Content="Belépés" Margin="10" Click="Login"/>
+        <PasswordBox    Name="passwordBox"
+                        Margin="10"
+                        MinHeight="35"/>
+        <Button Content="Belépés" Margin="10"/>
     </StackPanel>
 </Window>
